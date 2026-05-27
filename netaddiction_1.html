@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relazione Stage - Netaddiction 1</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="media/logo_itt.png">
+</head>
+<body>
+
+    <nav class="animate-fade">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="vermislab.html">Vermislab</a></li>
+            <li><a href="netaddiction_1.html" class="active">Netaddiction (Stage 2)</a></li>
+            <li><a href="netaddiction_2.html">Netaddiction (Stage 3)</a></li>
+        </ul>
+    </nav>
+
+    <div class="content animate-up" style="--header-image: url('media/header_netaddiction.png');">
+        <h1>Secondo Stage: Netaddiction</h1>
+        
+        <div class="intro-info">
+            <p><strong>Tutor aziendale:</strong> Andrea Deangelis</p>
+            <p><strong>Tutor scolastici: </strong> Prof. Simone Austeri e Prof. Federico Cini</p>
+        </div>
+
+        <section class="reveal">
+            <h2>L'Azienda</h2>
+            <p>
+                Fondata a Terni nel 1999, Netaddiction è un leader editoriale in Italia nei settori dell'intrattenimento, del cinema e della tecnologia. Lavorare in questa realtà mi ha permesso di interfacciarmi con un flusso di lavoro aziendale moderno e altamente professionale.
+            </p>
+        </section>
+
+        <section class="reveal">
+            <h2>Introduzione Teorica e Competenze di Base</h2>
+            <p>
+                Prima della fase pratica, ho acquisito competenze fondamentali su database relazionali (SQLite), reti IPv6 e sistemi Linux Ubuntu. Questa formazione teorica è stata essenziale per muovermi in autonomia e ha anticipato temi tecnici che avrei poi approfondito a scuola.
+            </p>
+        </section>
+
+        <section class="reveal">
+            <h2>Il Progetto RAG (Retrieval Augmented Generation)</h2>
+            <p>
+                Il compito principale che è stato assegnato a me e ai miei colleghi è stato quello di sviluppare un sistema RAG (Retrieval Augmented Generation). L'obiettivo del software era quello di analizzare, comprendere e rispondere in modo dinamico a delle domande poste dall'utente, andando a leggere ed estrarre i dati corretti da una serie di file in formato CSV.
+            </p>
+            <p>
+                Tutti e tre i componenti del gruppo abbiamo adottato approcci differenti per risolvere lo stesso problema. Questo ci ha permesso, durante lo sviluppo, di metterci costantemente a confronto per analizzare i codici e capire quale fosse la soluzione più efficiente e ottimale in termini di prestazioni e precisione delle risposte.
+            </p>
+            
+            <div class="image-placeholder">
+                <img src="media/schema_rag.jpg">
+            </div>
+        </section>
+
+        <section class="english-section reveal">
+            <h2>Technical Skills & Core Competencies</h2>
+            <p><em>A brief overview of the professional skills required to accomplish the project.</em></p>
+            <p>
+                Developing a local RAG system required a combination of technical knowledge and adaptability. Working in a real world tech environment allowed me to practice and master several core skills:
+            </p>
+            <ul>
+                <li><strong>Python & Flask Development:</strong> Writing clean backend code to process CSV data and creating a lightweight local web server.</li>
+                <li><strong>Local LLM Management:</strong> Understanding and configuring large language models via Bash using Ollama.</li>
+                <li><strong>System Administration:</strong> Navigating and operating efficiently within Linux (Ubuntu) terminal environments.</li>
+                <li><strong>Teamwork & Problem Solving:</strong> Comparing different approaches with my colleagues and conducting independent online research to fix bugs.</li>
+            </ul>
+        </section>
+
+        <section class="reveal">
+            <h2>Riflessioni Finali sullo Stage</h2>
+            <p>
+                Questo secondo stage mi ha permesso di fare un enorme salto di qualità. Ho approfondito tantissimo le mie conoscenze sul mondo dell'Intelligenza Artificiale, uscendo dalla semplice teoria ed entrando a contatto diretto con lo sviluppo di queste tecnologie. Oltre alle ovvie competenze tecniche su Python e Linux, l'aspetto che mi porto dietro con maggiore entusiasmo è stato lo sviluppo delle mie capacità di collaborazione e di problem-solving di gruppo, elementi fondamentali per qualunque programmatore.
+            </p>
+        </section>
+
+    </div>
+
+    <footer class="reveal" style="margin-top: 100px; padding: 40px 0 20px 0; border-top: 1px solid rgba(230, 223, 213, 0.08); text-align: center; color: #8c8275;">
+        <ul style="list-style: none; margin: 0 0 20px 0; padding: 0; font-size: 1.1rem; line-height: 1.8;">
+            <li><strong>Sede Legale:</strong> Piazza Europa 19, Terni</li>
+            <li><strong>Telefono:</strong> +39 07442462</li>
+            <li><strong>Email:</strong> amministrazione@netaddiction.it</li>
+        </ul>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active-block');
+                }
+            });
+        }, {
+            threshold: 0.15
+        });
+
+        document.querySelectorAll('.reveal').forEach((section) => {
+            observer.observe(section);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relazione Stage - Vermislab</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="media/logo_itt.png">
+</head>
+<body>
+
+    <nav class="animate-fade">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="vermislab.html" class="active">Vermislab</a></li>
+            <li><a href="netaddiction_1.html">Netaddiction (Stage 2)</a></li>
+            <li><a href="netaddiction_2.html">Netaddiction (Stage 3)</a></li>
+        </ul>
+    </nav>
+
+    <div class="content animate-up" style="--header-image: url('media/header_vermislab.png');">
+        <h1>PCTO all'estero: Vermislab</h1>
+        
+        <div class="intro-info">
+            <p><strong>Tutor aziendale:</strong> Paz Picallo</p>
+            <p><strong>Tutor scolastico: </strong> Prof. Simone Austeri</p>
+            <p><strong>Località:</strong>Santiago de Compostela, Galizia (Spagna)</p>
+            <p><strong>Durata:</strong> 4 settimane | 6 gennaio 2025 - 4 febbraio 2025</p>
+        </div>
+
+        <section class="reveal">
+            <h2>Motivazione della scelta</h2>
+            <p>
+                Uno dei miei obiettivi principali nella vita è quello di conoscere e imparare il più possibile, e quando mi si è presentata l’opportunità di acquisire esperienzalavorativa in un paese diverso da quelli che conosco non ci ho pensato due volte prima di candidarmi. Volevo usare le mie conoscenza della lingua spagnola per scoprire e incorporarmi in un ambiente lavorativo diverso da quello che conoscevo ed esplorare unaregione del mondo così particolare come la Galizia.
+            </p>
+            
+            <div class="image-placeholder">
+                <img src="media/mappa_galizia.jpg" alt="Mappa della Galizia">
+            </div>
+        </section>
+
+        <section class="reveal">
+            <h2>Santiago de Compostela</h2>
+            <p>
+                Santiago de Compostela è una città situata al nord-ovest della Spagna ed è importante per i cattolici visto che è la meta finale del Cammino di Santiago. È una città di medie dimensioni, paragonabili a quelle di Terni, è una città universitaria e molto viva. Attrae turisti da tutto il mondo, anche non cattolici, grazie alla sua divisione in città antica, piena di elementi artistici e architettura medievale, e città moderna, con un vasto numero di negozi e attrazioni moderne. È una meta eccezionale per gli studenti perché, essendo una città universitaria, è piena di giovani ed è molto ben collegata. L’unico aspetto negativo a mio parere è la sua piovosità che spesso ti impedisce di visitare la città liberamente.
+            </p>
+            
+            <div class="image-placeholder">
+                <img src="media/copertina_vermislab.png">
+            </div>
+        </section>
+
+        <section class="reveal">
+            <h2>L'Azienda: Vermislab</h2>
+            <p>
+                Versmislab è un istituto extrascolastico pomeridiano al quale possono partecipare ragazzi dai 3 fino ai 14 anni. È una realtà educativa che crea percorsi dedicati alla scienza, alla tecnologia e alla creatività. I ragazzi imparano la programmazione, robotica, biologia, sviluppo di videogiochi e a lavorare in gruppo. I programmi uniscono gioco e apprendimento, permettendo agli studenti di esprimersi, esplorare nuovi interessi e sviluppare competenze utili per il futuro.
+            </p>
+            
+            <div class="image-placeholder">
+                <img src="media/laboratorio.jpg">
+            </div>
+        </section>
+
+        <section class="english-section reveal">
+            <h2>Technical Roles and Responsibilities</h2>
+            <p><em>Highlighting the international aspect of the project.</em></p>
+            <p>
+                My experience evolved from general educational support to a specialized technical role, allowing me to apply my computer science background in a professional setting.
+            </p>
+            <ul>
+                <li>Hardware maintenance and diagnostic of laptops (ThinkPad series).</li>
+                <li>Software troubleshooting and OS configuration.</li>
+                <li>Setting up new devices, including 3D printers and tablets.</li>
+                <li>Assisting students in solving technical bugs during their coding projects.</li>
+                <li>Explaining hardware components and technical concepts to curious students.</li>
+            </ul>
+        </section>
+
+        <section class="reveal">
+            <h2>Conclusioni e Riflessioni</h2>
+            <p>
+                Nel percorso delle superiori, questa a mio parere è stata indubitabilmente una tra le esperienze più formative in assoluto, sia dal punto di vista professionale che umano. Mi ha aiutato a scoprire molte cose che non conoscevo e mi ha permesso di applicare e sviluppare ulteriormente le mie conoscenze attuali, mi ha messo a contatto con il mondo del lavoro ed è stata veramente una sfida piacevole.
+            </p>
+        </section>
+
+    </div>
+
+    <footer class="reveal" style="margin-top: 100px; padding: 40px 0 20px 0; border-top: 1px solid rgba(230, 223, 213, 0.08); text-align: center; color: #8c8275;">
+        <ul style="list-style: none; margin: 0 0 20px 0; padding: 0; font-size: 1.1rem; line-height: 1.8;">
+            <li><strong>Sede:</strong> Rua do Tambre 61, Santiago de Compostela, Galizia (Spagna)</li>
+            <li><strong>Telefono:</strong> +34 633482030</li>
+            <li><strong>Email:</strong> lab@vermislab.com</li>
+        </ul>
+        </p>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active-block');
+                }
+            });
+        }, {
+            threshold: 0.15
+        });
+
+        document.querySelectorAll('.reveal').forEach((section) => {
+            observer.observe(section);
+        });
+    </script>
+
+</body>
+</html>
